@@ -27,9 +27,18 @@ function Detail() {
           <span>TRAILER</span>
         </TrailerButton>
 
-        <AddButton></AddButton>
-        <GroupWatchButton></GroupWatchButton>
+        <AddButton>
+          <span>+</span>
+        </AddButton>
+        <GroupWatchButton>
+          <img src="/images/group-icon.png" alt="group-icon" />
+        </GroupWatchButton>
       </Controls>
+      <SubTitle>2018 · 7m · Family, Fantasy, Kids, Animation</SubTitle>
+
+      <Description>
+        A simple guy that want's to become a skilled developer.
+      </Description>
     </Container>
   );
 }
@@ -73,6 +82,7 @@ const ImageTitle = styled.div`
 
 const Controls = styled.div`
   display: flex;
+  align-items: center;
 `;
 
 const PlayButton = styled.button`
@@ -99,6 +109,37 @@ const TrailerButton = styled(PlayButton)`
   color: rgb(249, 249, 249); ;
 `;
 
-const AddButton = styled.button``;
+const AddButton = styled.button`
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  margin-right: 16px;
 
-const GroupWatchButton = styled.button``;
+  span {
+    font-size: 30px;
+    color: white;
+  }
+`;
+
+const GroupWatchButton = styled(AddButton)`
+  background-color: rgba(0, 0, 0);
+`;
+
+const SubTitle = styled.div`
+  font-size: 15px;
+  min-height: 20px;
+  margin-top: 26px;
+  color: rgba(249, 249, 249);
+`;
+const Description = styled.div`
+  line-height: 1.4;
+  font-size: 20px;
+  margin-top: 16px;
+  color: rgba(249, 249, 249);
+`;
