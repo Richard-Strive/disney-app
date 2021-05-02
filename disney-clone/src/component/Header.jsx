@@ -79,6 +79,7 @@ const NavMenu = styled.div`
         bottom: -6px;
         background: white;
         opacity: 0;
+        transform-origin: left center;
         transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
         transform: scaleX(0);
       }
