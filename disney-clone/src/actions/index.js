@@ -4,3 +4,16 @@ export default function (data) {
     payload: data,
   };
 }
+
+export default function (data) {
+  return {
+    type: "LOG_IN",
+    payload: data,
+  };
+}
+
+export default function (data) {
+  return {
+    type: "LOG_OUT",
+  };
+}
